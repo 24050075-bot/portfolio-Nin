@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyễn Hữu Nin</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-name">Nguyễn Hữu <span>Nin</span></h1>
+        <p class="brand-role">Sinh viên CNTT — Web & App Developer</p>
+      </div>
+
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Open menu"><i class="fa fa-bars"></i></button>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-cv" href="cv.pdf" download>
+          <i class="fa fa-download"></i> CV
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="profile-photo">
+        <img src="assets/ảnh.jpg" alt="Ảnh đại diện Nguyễn Hữu Nin">
+      </div>
+      <div class="intro">
+        <h2 class="intro-title">Xin chào, tôi là <span>Nguyễn Hữu Nin</span></h2>
+        <p class="intro-desc">
+          Tôi là sinh viên ngành Công Nghệ Thông Tin, đam mê lập trình web và lập trình ứng dụng.
+          Tôi muốn tạo ra sản phẩm rõ ràng, trực quan và mang dấu ấn cá nhân.
+        </p>
+        <ul class="contact-list">
+          <li><i class="fa fa-map-marker-alt"></i> TP. Hồ Chí Minh</li>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:nin67169@gmail.com">nin67169@gmail.com</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn-primary" href="#projects">Xem dự án</a>
+          <a class="btn-ghost" href="#contact">Liên hệ</a>
+          <button class="btn-ghost" onclick="changeName()">Đổi tên cá nhân</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-left">
+        <h3>Giới thiệu ngắn</h3>
+        <p>
+          Tôi là sinh viên ngành Công Nghệ Thông Tin, đam mê lập trình web và ứng dụng.
+          Thích tạo giao diện thân thiện, tối ưu trải nghiệm người dùng và học hỏi công nghệ mới.
+        </p>
+
+        <h4>Sở thích</h4>
+        <ul class="hobbies">
+          <li><i class="fa fa-music"></i> Nghe nhạc</li>
+          <li><i class="fa fa-film"></i> Xem phim</li>
+          <li><i class="fa fa-futbol"></i> Chơi thể thao</li>
+          <li><i class="fa fa-game"></i>game</li>
+        </ul>
+      </div>
+
+      <div class="about-right">
+        <div class="info-card">
+          <h4>Thông tin</h4>
+          <div class="info-row">
+            <p><strong>Họ tên:</strong> <span>Nguyễn Hữu Nin</span></p>
+            <p><strong>Quê quán:</strong> <span>TP. Hồ Chí Minh</span></p>
+            <p><strong>Email:</strong> <span>nin67169@gmail.com</span></p>
+            <p><strong>Vai trò:</strong> <span>Web / App Developer</span></p>
+          </div>
+        </div>
+
+        <div class="skill-highlight">
+          <h4>Chuyên môn</h4>
+          <div class="skill-chips">
+            <span class="chip"><i class="fa fa-code"></i> HTML</span>
+            <span class="chip"><i class="fa fa-palette"></i> CSS</span>
+            <span class="chip"><i class="fa fa-caret-square-right"></i> C++</span>
+            <span class="chip"><i class="fa fa-terminal"></i> C#</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h3 class="section-title">Kỹ năng</h3>
+      <div class="skills-grid">
+        <div class="skill"><i class="fa fa-html5"></i><h5>HTML</h5><p>Thành thạo markup và semantic web.</p></div>
+        <div class="skill"><i class="fa fa-css3-alt"></i><h5>CSS</h5><p>Thành thạo Flex, Grid, responsive.</p></div>
+        <div class="skill"><i class="fa fa-file-code"></i><h5>C++</h5><p>Logic và cấu trúc dữ liệu cơ bản.</p></div>
+        <div class="skill"><i class="fa fa-window-maximize"></i><h5>C#</h5><p>Console app, WinForm cơ bản.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AWARDS ===== -->
+  <section id="awards" class="section awards">
+    <div class="container">
+      <h3 class="section-title">Chứng chỉ & Giải thưởng</h3>
+      <ul class="contact-methods">
+        <li><i class="fa fa-certificate"></i> Chứng chỉ Tin học cơ bản (MOS)</li>
+        <li><i class="fa fa-award"></i> Giải khuyến khích Lập trình viên trẻ</li>
+        <li><i class="fa fa-laptop-code"></i> Tham gia dự án Web cho CLB CNTT</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h3 class="section-title">Dự án</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Website giới thiệu sản phẩm</h4>
+          <p>Site demo: thông tin, gallery, contact form.</p>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+        </article>
+
+        <article class="project-card">
+          <h4>Game đoán số</h4>
+          <p>Game nhỏ luyện logic và DOM manipulation.</p>
+          <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Game</span></div>
+        </article>
+
+        <article class="project-card">
+          <h4>Đang phát triển</h4>
+          <p>App quản lý & portfolio có animation.</p>
+          <div class="tag-row"><span class="tag">Planning</span><span class="tag">UI/UX</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h3>Liên hệ</h3>
+        <p>Nếu bạn muốn hợp tác hoặc trao đổi, mình luôn sẵn sàng.</p>
+        <ul>
+          <li><i class="fa fa-envelope"></i> <a href="mailto:nin67169@gmail.com">baogia19867@gmail.com</a></li>
+          <li><i class="fa fa-map-marker-alt"></i> TP. Hồ Chí Minh</li>
+        </ul>
+        <a class="btn-primary" href="mailto:nin67169@gmail.com">Gửi email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>Gia Bảo</h4>
+        <p>Web & App Developer — TP.HCM</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">© <span id="year"></span> Nguyễn Hữu Nin — All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById('mobileToggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+    function changeName() {
+      const newName = prompt("Nhập tên mới của bạn:");
+      if (newName) {
+        document.querySelector('.intro-title span').textContent = newName;
+        alert("Tên đã được cập nhật!");
+      }
+    }
+  </script>
+</body>
+</html>
